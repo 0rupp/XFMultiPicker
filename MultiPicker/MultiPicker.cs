@@ -2,7 +2,7 @@
 using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
-namespace GeoBis.Mobile.UI.CustomControls
+namespace MP.CustomControls
 {
     public class MultiPicker<T> : Button where T : class
     {
