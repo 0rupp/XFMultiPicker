@@ -1,5 +1,5 @@
 # XFMultiPicker
-Listview Popup with multiselect-feature. It still has many restrictions (i.e. custom DataTemplates), which I will hopefully work on in the future.
+ListView Popup with multiselect-feature. It still has many restrictions (i.e. custom DataTemplates), which I will hopefully work on in the future.
 Currently it is implemted as a button, that opens a popup with a ListView in it.
 
 ##Usage
