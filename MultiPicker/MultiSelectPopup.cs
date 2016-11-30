@@ -4,7 +4,7 @@ using System.Linq;
 using Rg.Plugins.Popup.Pages;
 using Xamarin.Forms;
 
-namespace GeoBis.Mobile.UI.CustomControls
+namespace MP.CustomControls
 {
     public class SelectMultipleBasePage<T> : PopupPage
     {
