@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:Model;assembly=XFMultiPickerSample"
+             xmlns:xfMultiPicker="clr-namespace:XFMultiPicker;assembly=XFMultiPickerSample"
+             xmlns:converter="clr-namespace:Converter;assembly=XFMultiPickerSample"
+             x:Class="XFMultiPickerSample.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:JoinListConverter x:Key="JoinListConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Multi Picker Sample" />
+        <xfMultiPicker:MultiPickerView x:TypeArguments="model:MyType" 
+                                       ItemsSource="{Binding AvailableItems}"
+                                       SelectedItems="{Binding SelectedItems}"
+                                       Text="{Binding SelectedItems, Converter={StaticResource JoinListConverter}}" />
+    </StackLayout>
+</ContentPage>
